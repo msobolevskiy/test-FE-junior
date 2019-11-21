@@ -1,12 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="header-wrap container">
+            <div class="header-logo"></div>
+            <ul class="header-nav">
+                <li><a href="#" class="">Home.</a></li>
+                <li><a href="#" class="">About us.</a></li>
+                <li><a href="#" class="">Portfolio.</a></li>
+                <li><a href="#" class="">Blog.</a></li>
+                <li><a href="#" class="">Contact us.</a></li>
+            </ul>
+            <div class="header-right">
+                <div>
+                    <span class="custom-dropdown">
+                        <select>
+                            <option>EN</option>
+                            <option>RU</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="header-list">
+                    <div class="section">
+                        <a href="#" class="burger-meny__button">
+                            <span></span>
+                        </a>
+
+                        <div class="burger-meny__nav">
+                            <a href="#" class="burger-meny__link">Home.</a>
+                            <a href="#" class="burger-meny__link">About us.</a>
+                            <a href="#" class="burger-meny__link">Portfolio.</a>
+                            <a href="#" class="burger-meny__link">Blog.</a>
+                            <a href="#" class="burger-meny__link">Contact us.</a>
+                        </div>
+
+                        <div class="burger-meny__overlay"></div>
+
+                    </div>
+                </div>
+                <div class="header-btn">Contact Us</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Banner -->
+        <section class="container">
+            <div class="banner-wrap ">
+
+                <div class="banner-img"><img src="./pic/banner-img.png" alt="banner img"></div>
+
+                <div class="banner-text">
+
+                    <h1>The Spirit of Digital
+
+                        Agency.</h1>
+                    <div class="banner-text_wrap">
+                        <p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan
+                            tincidunt.</p>
+                    </div>
+                    <div class="banner-btns">
+                        <div class="banner-btns-active">More About us</div>
+                        <div class="banner-btns_btn">Get in Touch</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- / Section Banner -->
+
+        <!-- Section Portfolio -->
+        <section class="container">
+            <div class="portfolio-wrap">
+                <div class="portfolio-wrap-text">
+                    <div>See some of our</br>
+                        Creative work.</div>
+                </div>
+                <div class="portfolio-elem-wrap">
+                    <div class="portfolio-elem"></div>
+                    <div class="portfolio-elem"></div>
+                    <div class="portfolio-elem"></div>
+                    <div class="portfolio-elem"></div>
+                    <div class="portfolio-elem"></div>
+                    <div class="portfolio-elem"></div>
+                </div>
+                <div class="portfolio-btn">See More of These.</div>
+            </div>
+        </section>
+        <!-- / Section Portfolio -->
+
+        <!-- Section form -->
+        <section class="container">
+            <div class="form-wrap">
+
+                <div class="form-contact">contact us</div>
+                <div class="form-contact-text">Get in Touch</div>
+                <form class="contact_form" action="" method="post" name="contact_form">
+                    <div class="form-content">
+                        <div class="contact_form-input-wrap">
+                            <input type="text" name="email" placeholder="Your email" />
+
+                            <input type="text" name="subject" placeholder="Subject" />
+
+                        </div>
+                        <textarea name="message" rows="3" placeholder="Message here..."></textarea>
+                    </div>
+
+                    <button class="form-btn" type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- / Section form -->
+    </main>
+
+    <footer>
+        <div class="footer-wrap container">
+            <div class="footer-doob">doob</div>
+            <div class='footer-text'>Creativity above</div>
+
+            <ul class="footer-nav">
+                <li><a href="#" class="">Home.</a></li>
+                <li><a href="#" class="">About us.</a></li>
+                <li><a href="#" class="">Portfolio.</a></li>
+                <li><a href="#" class="">Blog.</a></li>
+                <li><a href="#" class="">Contact us.</a></li>
+            </ul>
+            <div class="footer-inc"> © 2019 - Doob,All Right Reserved</div>
+            <div class="footer-img">
+                <a href="#"><img src="./pic/Facebook.png" alt=""></a>
+                <a href="#"><img src="./pic/Twitter.png" alt=""></a>
+                <a href="#"><img src="./pic/Dribble.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./animation.js"></script>
 </body>
+
 </html>
