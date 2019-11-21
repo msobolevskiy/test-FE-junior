@@ -57,13 +57,17 @@ body {
     height: 1em;
     font-size: .625em;
     line-height: 1;
-    right: 1.2em;
-    top: 50%;
+    right: 2.2em;
+    top: 70%;
     margin-top: -.5em;
 }
 
 .custom-dropdown::after {
     color: #314584;
+}
+select:hover{
+    color: #ff3946;
+    transition: .3s;
 }
 
 /*  */
@@ -207,12 +211,17 @@ body {
 }
 
 .banner-btns-active {
+    color: #314584;
+    box-shadow: 0 5px 10px rgba(255, 57, 70, 0.15);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.banner-btns-active:hover{
     background-color: #ff3946;
     box-shadow: 0 5px 10px rgba(255, 57, 70, 0.15);
     color: white;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: none;
+    transition: .3s;
 }
 
 /* Section Portfolio */
@@ -246,6 +255,9 @@ body {
 .portfolio-btn {
     color: #ff3946;
     padding-top: 10px;
+}
+.portfolio-btn:hover{
+    color: #314584;
 }
 
 /* Section Form */
@@ -298,10 +310,19 @@ body {
     box-shadow: 0 5px 10px rgba(255, 57, 70, 0.15);
     color: white;
     padding: 10px 15px;
-    border-radius: 15px;
+    border-radius: 35px;
     border: none;
     margin-top: 20px;
     margin-bottom: 60px;
+    box-sizing: border-box;
+    width: 201px;
+    height: 56px;
+}
+.form-btn:hover{
+    background-color: white;
+    color: #ff3946;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgb(206, 31, 43);
 }
 
 footer {
@@ -405,6 +426,10 @@ footer {
         width: 334px;
         height: 253px;
     }
+    .portfolio-elem:hover{
+        opacity: 0.5;
+        transition: .3s;
+    }
 
     .footer-nav {
         width: 555px;
@@ -413,6 +438,10 @@ footer {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
+    }
+    .footer-nav a:hover{
+        color: #ff3946;
+        transition: .3s;
     }
 
     .footer-nav a {
@@ -443,13 +472,17 @@ footer {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
-        margin-left: -488px;
+        margin-left: -245px;
         width: 550px;
     }
 
     .header-nav a {
         text-decoration: none;
         color: #314584;
+    }
+    .header-nav li a:hover{
+        color: #ff3946;
+        transition: .3s;
     }
 
     .banner-wrap {
@@ -496,9 +529,6 @@ footer {
         border-radius: 35px;
     }
 
-    .banner-btns_btn {
-        padding-left: 39px;
-    }
 
     .portfolio-wrap-text {
         padding-bottom: 73px;
@@ -581,13 +611,34 @@ footer {
     .header-btn{
         width: 201px;
         height: 61px;
+        box-sizing: border-box;
         box-shadow: 0 5px 10px rgba(25, 45, 51, 0.15);
-        color: #ff3946;
         display: flex;
         text-align: center;
-        justify-content: center;
         align-items: center;
-        margin-left: 48px;
+        margin-left: 30px;
+        padding-left: 34px;
+        position: relative;
     }
-    
+    .header-btn a{
+        color: #ff3946;
+        text-decoration: none;
+    }
+    .header-btn::after{
+        content: '';
+        position: absolute;
+        background-image: url('./pic/Arrow.png');
+        background-repeat: no-repeat;
+        right: 24px;
+        width: 30px;
+        height: 19px;
+    }
+    .header-btn:hover{
+        box-shadow: 1px -1px 15px #314584;
+        transition: .3s;
+    }
+   
+    .section{
+        padding-right: 0;
+    }
 }
