@@ -9,7 +9,16 @@ body {
     margin: auto;
     
 }
-
+header{
+    position: fixed;
+    width: 100%;
+    transition: .3s;
+    z-index: 10;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
 
 .header-wrap {
     display: -webkit-box;
@@ -27,7 +36,7 @@ body {
 }
 
 .header-logo {
-    background-image: url(./pic/Logo.png);
+    background-image: url(../pic/Logo.png);
     width: 69px;
     height: 30px;
     background-repeat: no-repeat;
@@ -172,7 +181,7 @@ body {
     margin-left: 70px;
 }
 .burger-meny__link-logo {
-    background-image: url(./pic/Logo.png);
+    background-image: url(../pic/Logo.png);
     width: 69px;
     height: 30px;
     background-repeat: no-repeat;
@@ -802,7 +811,7 @@ footer {
     .header-btn::after{
         content: '';
         position: absolute;
-        background-image: url('./pic/Arrow.png');
+        background-image: url('../pic/Arrow.png');
         background-repeat: no-repeat;
         right: 24px;
         width: 30px;
@@ -828,6 +837,9 @@ footer {
     .header-logo{
         margin-left: -182px;
     }
+header{
+    height: 176px;
+}
     
 }
 
@@ -839,4 +851,36 @@ footer {
 .single-item img{
     width: 100%;
 
+}
+
+header:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;;
+    content: '';
+    background: #fff;
+    transition: .3s;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+header.fixed{
+    padding-top: 0px;
+    box-shadow: 0 0px 10px 0 rgba(0,0,0,0.2);
+    height: 100px;
+
+}
+header .container{
+    padding-top: 0px;
+}
+header.fixed:after{
+    opacity: 1;
+}
+header .container{
+    position: relative;
+    z-index: 10;
+}
+header .header-wrap{
+    width: 100%;
 }
