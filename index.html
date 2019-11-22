@@ -10,7 +10,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./all.min.css">
 	<link rel="stylesheet" href="./fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 	<link rel="stylesheet" href="./style.css">
+	
 </head>
 
 <body>
@@ -35,8 +38,8 @@
 						<ul>
 							<li class="r-ru">
 								<a href="">
-                        <span class="label">RU</span>
-                    </a>
+									<span class="label">RU</span>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -44,8 +47,8 @@
 				<div class="header-list">
 					<div class="section">
 						<a href="#" class="burger-meny__button">
-                            <span></span>
-                        </a>
+							<span></span>
+						</a>
 
 						<div class="burger-meny__nav">
 							<a href="#" class="burger-meny__link">Home.</a>
@@ -69,16 +72,20 @@
 		<section class="container">
 			<a name='aboutUs'></a>
 			<div class="banner-wrap ">
-
-				<div class="banner-img"><img src="./pic/banner-img.png" alt="banner img"></div>
-
+					<div class="banner-img-solo banner-img"><img src="./pic/banner-img.png" alt="banner img"></div>
+					<div class="my-slider banner-img">
+						<div><img src="./pic/banner-img.png" alt="banner img"></div>
+						<div><img src="./pic/banner-img.png" alt="banner img"></div>
+						<div><img src="./pic/banner-img.png" alt="banner img"></div>
+					</div>
 				<div class="banner-text">
 
 					<h1>The Spirit of Digital Agency.
 
 					</h1>
 					<div class="banner-text_wrap">
-						<p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.
+						<p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan
+							tincidunt.
 						</p>
 					</div>
 					<div class="banner-btns">
@@ -157,7 +164,13 @@
 			</div>
 		</div>
 	</footer>
+	<!-- <div class="my-slider ">
+		<div class="banner-img single-item"><img src="./pic/banner-img.png" alt="banner img"></div>
+		<div class="banner-img single-item"><img src="./pic/banner-img.png" alt="banner img"></div>
+		<div class="banner-img single-item"><img src="./pic/banner-img.png" alt="banner img"></div>
+	</div> -->
 	<script src="./jquery-3.3.1.min.js"></script>
+	<script src="./slick/slick.min.js"></script>
 	<script src="./animation.js"></script>
 	<script src="./template_jq.js"></script>
 </body>

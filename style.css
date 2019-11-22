@@ -477,10 +477,12 @@ footer {
 
 .footer-nav,
 .header-nav,
-.header-btn {
+.header-btn,
+.my-slider {
     display: none;
 
 }
+
 
 @media (min-width: 575px) {
     .banner-img {
@@ -491,6 +493,12 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .my-slider{
+        display: block;
+    }
+    .banner-img-solo{
+        display: none;
+    }
 
     .form-wrap,
     .banner-text {
@@ -812,4 +820,14 @@ footer {
         margin-left: -182px;
     }
     
+}
+
+.my-slider{
+    width: 680px;
+    height: 660px;
+    padding: 0;
+}
+.single-item img{
+    width: 100%;
+
 }
