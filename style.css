@@ -169,6 +169,7 @@ body {
     width: 100%;
     overflow: hidden;
     text-align: center;
+    margin-left: 70px;
 }
 .burger-meny__link-logo {
     background-image: url(./pic/Logo.png);
@@ -182,10 +183,11 @@ body {
 
 .menu-dtn_active .burger-meny__nav {
     left: 0;
+    margin-left: 0 !important;
 }
 
 .burger-meny__link {
-    padding: 30px;
+    padding: 25px;
     font-size: 28px;
     text-decoration: none;
     text-transform: uppercase;
