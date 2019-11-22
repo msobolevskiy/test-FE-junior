@@ -17,10 +17,26 @@
 			
 		});
 		
-		// $('.section').on('click', function(e) {
-		// 	e.preventDefault;
-		// 	$(this).toggleClass('menu-dtn_active')
-		// });
+
+
+		var $page = $('html, body');
+		$('.header-nav li a').click(function () {
+			var header_height = $('header').height();
+			$page.animate({
+				scrollTop: $($.attr(this, 'href')).offset().top - header_height
+			}, 750);
+			return false;
+		});
+
+		$(window).on('load scroll', function () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop >= 1) {
+				$('header').addClass('fixed');
+			} else {
+				$('header').removeClass('fixed');
+			}
+
+		})
 		
 
 	});
