@@ -91,7 +91,7 @@ body {
     -o-transition: .3s;
     transition: .3s;
 }
-/*  */
+
 
 /* burger */
 .burger-meny__button {
@@ -99,6 +99,7 @@ body {
     width: 50px;
     height: 50px;
     position: relative;
+    z-index: 12;
 }
 
 .burger-meny__button span,
@@ -166,9 +167,17 @@ body {
     -ms-flex-flow: column;
     flex-flow: column;
     width: 100%;
-    color: aqua;
-    overflow-y: auto;
-    left: -100%;
+    overflow: hidden;
+    text-align: center;
+}
+.burger-meny__link-logo {
+    background-image: url(./pic/Logo.png);
+    width: 69px;
+    height: 30px;
+    background-repeat: no-repeat;
+    align-self: center;
+    padding-bottom: 50px;
+    margin-top: -60px;
 }
 
 .menu-dtn_active .burger-meny__nav {
@@ -182,7 +191,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-
+    color: hsl(226, 46%, 35%);
 }
 
 .burger-meny__link:hover {
@@ -192,13 +201,14 @@ body {
 
 .burger-meny__overlay {
     display: none;
-    position: flex;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vh;
     height: 100vh;
     z-index: 10;
-    background-color: rgba(204, 201, 197, 0.829);
+    background-color: white;
+   
 }
 
 .menu-dtn_active .burger-meny__overlay {
@@ -594,9 +604,6 @@ footer {
         padding: 0;
     }
 
-    /* .header-logo {
-        margin-left: -182px;
-    } */
 
     .header-wrap {
         padding-top: 78px;

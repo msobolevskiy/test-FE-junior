@@ -15,10 +15,12 @@
 			autoplay: true,
 			autoplaySpeed: 3000
 			
-		})
-		// if($(window).width()<1100){
-		// 	$('.my-slider').slick('unslick');
-		// }
+		});
+		
+		// $('.section').on('click', function(e) {
+		// 	e.preventDefault;
+		// 	$(this).toggleClass('menu-dtn_active')
+		// });
 		
 
 	});
