@@ -1,1 +1,1 @@
-# test-FE-junior
+# https://msobolevskiy.github.io/test-FE-junior.github.io/
